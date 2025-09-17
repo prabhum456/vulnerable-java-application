@@ -1,0 +1,22 @@
+title: Sample Threagile Model
+version: 1.0
+
+assets:
+  webapp:
+      type: application
+      business_criticality: important
+      description: Sample web application
+      tags:
+        - public
+      data_assets_processed:
+        - user_data
+      threats:
+        - threat: Data Leakage
+          description: Sensitive data might be exposed
+          severity: high
+
+data_assets:
+  user_data:
+    description: User personal information
+    tags: [confidential]
+    usage: processed
